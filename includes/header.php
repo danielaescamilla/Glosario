@@ -24,7 +24,7 @@ if (session_status() == PHP_SESSION_NONE) session_start();
     </a>
     <div class="d-flex ms-auto">
       <?php if(isset($_SESSION['user_id'])): ?>
-        <span class="navbar-text">👋 Bienvenido, <strong><?php echo htmlspecialchars($_SESSION['name']); ?></strong></span>
+        <span class="navbar-text"> Bienvenido<strong><?php echo htmlspecialchars($_SESSION['name']); ?></strong></span>
         <a href="/glosario/auth/logout.php" class="btn btn-outline-danger btn-sm ms-3">Salir</a>
       <?php else: ?>
         <a href="/glosario/auth/login.php" class="btn btn-primary btn-sm">Ingresar</a>
